@@ -1,6 +1,9 @@
+import Navbar from "@/scenes/navbar"
 const App = () => {
   return (
-    <div>Hello</div>
+   <>
+     <Navbar/>
+   </>
   )
 }
 
