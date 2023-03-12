@@ -4,6 +4,7 @@ import Logo from "@/assets/Logo.png";
 import Link from "./Link";
 import { SelectedPage } from "@/shared/types";
 import useMediaQuery from "@/Hooks/useMediaQuery";
+import ActionButton from "@/shared/ActionButton";
 type Props = {
   isTopOfPage: boolean;
   selectedPage: SelectedPage;
@@ -47,7 +48,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                 </div>
                 <div className={`${flexBetween} gap-8`}>
                   <p>Sign In</p>
-                  {/* <ActionButton setSelectedPage={setSelectedPage}>Become a Member</ActionButton> */}
+                  <ActionButton setSelectedPage={setSelectedPage}>Become a Member</ActionButton>
                 </div>
               </div>
             ) : (
